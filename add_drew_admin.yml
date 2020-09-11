@@ -10,7 +10,7 @@
      user:
        name: drew
        comment: Drew DeVore
-       password: $6$0fxvrpLad$4vv3s7bzSNjkw0SibiqgWvIS0Yd555KlPfkobHahqcsROkkUxPUQMFdZRUCb0Sj1WzF8NNIs7wG2fYqdD/68f0
+       password: $6$OOm/Gq51HW8I$tk8QjMicx7j1L.Y7mWaHkf/gS/7Y6fbwooIfPzbVs9O37T20NaPv0aLUiAv22lQ07y2OGqujn7pbG6W9v/sEN0
        uid: 1010
        group: users
        groups: wheel
