@@ -17,4 +17,10 @@
        append: yes
        state: present
        shell: /bin/bash
+
+   - name: add SSH key
+     authorized_key:
+       user: drew
+       state: present
+       key: ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBERBG2OnlC2jKFF0/nrWwjohdDRRRAuhgUjopwUKj5RA9t2DnWQ+VAMC5pl7ZBwx9eom6QAFSjwjrvPm61u2/X8= drew@devorcula.com
 ...
