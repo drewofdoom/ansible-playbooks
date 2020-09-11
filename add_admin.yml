@@ -1,0 +1,10 @@
+- name: add user, add to the wheel group, copies in their ssh key
+  user:
+    name: '{{ username }}'
+    password: '{{ password}}'
+    comment: 
+    group: wheel
+  authorized_key:
+    user: '{{ username }}'
+    state: present
+    key: '{{ ssh_pubkey }}'
