@@ -1,0 +1,3 @@
+[submodule "ansible-secure-ssh"]
+	path = ansible-secure-ssh
+	url = https://github.com/vitalk/ansible-secure-ssh
