@@ -1,6 +1,20 @@
-- name: add user drew, add to the wheel group, copies in their ssh key
-  user:
-    name: drew
-    password: $6$0fxvrpLad$4vv3s7bzSNjkw0SibiqgWvIS0Yd555KlPfkobHahqcsROkkUxPUQMFdZRUCb0Sj1WzF8NNIs7wG2fYqdD/68f0
-    comment: Drew DeVore
-    group: wheel
+---
+- hosts: all
+  remote_user: root
+  become: yes
+  become_method: sudo
+  gather_facts: no
+  connection: ssh
+  tasks:
+   - name: add user "drew"
+     user:
+       name: drew
+       comment: Drew DeVore
+       password: $6$0fxvrpLad$4vv3s7bzSNjkw0SibiqgWvIS0Yd555KlPfkobHahqcsROkkUxPUQMFdZRUCb0Sj1WzF8NNIs7wG2fYqdD/68f0
+       uid: 1010
+       group: users
+       groups: wheel
+       append: yes
+       state: present
+       shell: /bin/bash
+...
