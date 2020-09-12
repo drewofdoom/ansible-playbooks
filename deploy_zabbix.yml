@@ -1,0 +1,12 @@
+---
+- name: Using Zabbix collection
+  hosts: all
+  roles:
+    - role: community.zabbix.zabbix_agent
+      zabbix_agent_server: http://66.175.211.114/
+      
+  tasks:
+    - name: Ensure host is monitored by Zabbix
+      community.zabbix.zabbix_host:
+        server_url: http://66.175.211.114/
+...
