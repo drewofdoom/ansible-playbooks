@@ -1,4 +1,2 @@
 ---
-collections:
-  - name: community.zabbix
-    version: 1.0.0
+- src: https://github.com/ansible-collections/community.zabbix
