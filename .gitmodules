@@ -1,3 +1,6 @@
 [submodule "ansible-secure-ssh"]
 	path = ansible-secure-ssh
 	url = https://github.com/vitalk/ansible-secure-ssh
+[submodule "deploy_zabbix/community.zabbix"]
+	path = deploy_zabbix/community.zabbix
+	url = https://github.com/ansible-collections/community.zabbix
