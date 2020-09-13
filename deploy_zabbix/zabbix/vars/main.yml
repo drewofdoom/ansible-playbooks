@@ -1,7 +1,6 @@
 ---
 # vars file for deploy_zabbix
-- hosts: all
-  roles:
+- roles:
      - role: community.zabbix.zabbix_agent
        zabbix_agent_server: 66.175.211.114
        zabbix_agent_serveractive: 66.175.211.114
