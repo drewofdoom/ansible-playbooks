@@ -1,0 +1,3 @@
+---
+# defaults file for deploy_zabbix
+SERVER_URL: http://zabbix.devorcula.com

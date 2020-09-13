@@ -1,12 +1,12 @@
 ---
+# tasks file for deploy_zabbix
 - name: Using Zabbix collection
   hosts: all
   roles:
     - role: community.zabbix.zabbix_agent
-      zabbix_agent_server: http://66.175.211.114/
+      zabbix_agent_server: {{ SERVER_URL }}
       
   tasks:
     - name: Ensure host is monitored by Zabbix
       community.zabbix.zabbix_host:
-        server_url: http://66.175.211.114/
-...
+        server_url: {{ SERVER_URL }}
