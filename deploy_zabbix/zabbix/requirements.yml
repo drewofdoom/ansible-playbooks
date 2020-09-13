@@ -1,3 +1,2 @@
 ---
-roles:
-  - name: community.zabbix
+- src: community.zabbix

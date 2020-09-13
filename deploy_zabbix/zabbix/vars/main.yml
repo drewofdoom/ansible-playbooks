@@ -1,15 +1,13 @@
 ---
 # vars file for deploy_zabbix
-- roles:
-     - role: community.zabbix.zabbix_agent
-       zabbix_agent_server: 66.175.211.114
-       zabbix_agent_serveractive: 66.175.211.114
-       zabbix_url: 66.175.211.114
-       zabbix_api_use: true # use zabbix_api_create_hosts and/or zabbix_api_create_hostgroup from 0.8.0
-       zabbix_api_user: apiaccess
-       zabbix_api_pass: zBH$qxZ*rTSZ$q7G6 #yes, I know this is plaintext. it's just for testing. No molesta!
-       zabbix_create_host: present
-       zabbix_host_groups:
-         - Linux Servers
-       zabbix_link_templates:
-         - Template OS Linux
+zabbix_agent_server: 66.175.211.114
+zabbix_agent_serveractive: 66.175.211.114
+zabbix_url: 66.175.211.114
+zabbix_api_use: true # use zabbix_api_create_hosts and/or zabbix_api_create_hostgroup from 0.8.0
+zabbix_api_user: apiaccess
+zabbix_api_pass: zBH$qxZ*rTSZ$q7G6 #yes, I know this is plaintext. it's just for testing. No molesta!
+zabbix_create_host: present
+zabbix_host_groups:
+  - Linux Servers
+zabbix_link_templates:
+  - Template OS Linux
