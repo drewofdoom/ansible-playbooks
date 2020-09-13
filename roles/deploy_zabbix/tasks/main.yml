@@ -2,5 +2,5 @@
 # tasks file for deploy_zabbix
 - name: Deploy Zabbix Agent
   zabbix_agent:
-    zabbix_agent_server: {{ zabbix_agent_server }}
-    zabbix_agent_serveractive: {{ zabbix_agent_serveractive }}
+    zabbix_agent_server: "{{ zabbix_agent_server }}"
+    zabbix_agent_serveractive: "{{ zabbix_agent_serveractive }}"
